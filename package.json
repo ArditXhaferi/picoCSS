@@ -7,6 +7,14 @@
 		"build": "vite build",
 		"preview": "vite preview"
 	},
+	"svelte": {
+		"preprocess": "svelte-preprocess",
+		"resolve": {
+		  "alias": {
+			"@components": "./src/components"
+		  }
+		}
+	  },
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
