@@ -1,5 +1,5 @@
 <script>
-    import Boxes from "../components/Boxes.svelte";
+    import Boxes from "../components/boxes.svelte";
 </script>
 
 <main>
