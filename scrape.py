@@ -7,7 +7,7 @@ valuesList = {}
 r = requests.get("https://tailwindcss.com/docs/installation")
 soup = BeautifulSoup(r.content, 'html.parser')
 data = soup.findAll("a", attrs={'class': 'block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300'})
-for div in data[20:40]:
+for div in data:
     if(div.get("href").startswith("/")):
         b = requests.get("https://tailwindcss.com/" + div.get("href"))
         Ssoup = BeautifulSoup(b.content, 'html.parser')
