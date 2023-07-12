@@ -10,13 +10,14 @@
 	"svelte": {
 		"preprocess": "svelte-preprocess",
 		"resolve": {
-		  "alias": {
-			"@components": "./src/components"
-		  }
+			"alias": {
+				"@components": "./src/components"
+			}
 		}
-	  },
+	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.20.4",
 		"prismjs": "^1.29.0",
 		"svelte": "^4.0.0",
