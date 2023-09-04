@@ -65,19 +65,19 @@
     }
     @font-face {
         font-family: sf-black;
-        src: url(sf-black.otf);
+        src: url('/fonts/sf-black.otf');
         font-weight: 900;
     }
 
     @font-face {
         font-family: sf-bold;
-        src: url(sf-bold.otf);
+        src: url('/fonts/sf-bold.otf');
         font-weight: 700;
     }
 
     @font-face {
         font-family: sf-regular;
-        src: url(sf-regular.otf);
+        src: url('/fonts/sf-regular.otf');
         font-weight: 400;
     }
 
