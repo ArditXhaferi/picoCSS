@@ -28,15 +28,14 @@
         z-index: 100000;
         max-width: 90rem;
         margin: 0 auto;
-        height: 25rem;
+        height: auto;
         justify-content: space-around;
         flex-wrap: wrap;
     }
     .example div, .example img{
-
         position: relative;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
     .first::after{
         content: "tailwindcss";
@@ -89,10 +88,11 @@
     h1{
         font-family: sf-black;
         color: #CCCCCC;
-        font-size: 4rem;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 1rem;
     }
+
 
     main{
         height: 100%;
@@ -104,7 +104,7 @@
     }
     .name{
         font-family: sf-black;
-        font-size: 6rem;
+        font-size: 3.5rem;
         text-align: center;
         color: #CCCCCC;
         -webkit-text-fill-color: transparent;
@@ -128,5 +128,25 @@
         z-index: 10;
         transform: scale(1);
         pointer-events: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+        h1{
+            font-size: 4rem;
+        }
+        .name{
+            font-size: 6rem;
+        }
+    }
+
+    @media only screen and (min-width: 1324px) {
+        .example{
+            height: 25rem;
+        }
+
+        .example div, .example img{
+            width: auto;
+            height: 100%;
+        }
     }
 </style>
