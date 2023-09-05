@@ -50,6 +50,10 @@
 
 
 <style>  
+
+    iframe{
+        margin-right: -100px;
+    }
     .alert {
         position: absolute;
         bottom: 10px;
