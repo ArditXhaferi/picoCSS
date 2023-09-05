@@ -80,7 +80,7 @@ const searchItems = () => {
     .details{
         opacity: 0;
         transition: .2s ease;
-        overflow: scroll;
+        overflow-y: scroll;
         max-width: 100%;
         max-height: 9rem;
         display: block;
